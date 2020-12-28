@@ -1,0 +1,319 @@
+@import url(font.less);
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_bottom {
+    padding-bottom: 1.94444444444vw
+}
+
+.certificates_layout {
+    padding-right: 2.94117647059vw;
+    padding-left: 2.94117647059vw;
+    background: white;
+    padding-bottom: 9.72222222222vw;
+    margin-bottom: 6.94444444444vw;
+    padding-top: 3.47222222222vw;
+}
+
+.certificate_card {
+    display: flex;
+    width: calc(100% / 12 * 11);
+    position: relative;
+    min-height: 13.8888888889vw;
+    // padding-top: 1.80555555556vw;
+    // padding-bottom: 2.63888888889vw;
+    margin-bottom: 4.16666666667vw;
+
+    .info_block {
+        width: calc(100% / 11 * 5);
+        z-index: 1;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+            transition: 0.3s all ease-in-out;
+        }
+
+        .btn {
+            opacity: 1;
+        }
+    }
+
+    &:before {
+        content: '';
+        width: calc(100% + 1.47058823529vw);
+        height: calc(100% + 1.91176470588vw + 2.79411764706vw);
+        position: absolute;
+        top: -1.91176470588vw;
+        left: -1.47058823529vw;
+        background: #FFFFFF;
+        box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.15);
+        z-index: 0;
+        opacity: 0;
+        transition: 0.3s all ease-in-out;
+
+    }
+
+    h2 {
+        .font-400-raleway;
+        font-size: 2.64705882353vw;
+        line-height: 2.94117647059vw;
+        letter-spacing: -1px;
+        color: #000000;
+        margin-bottom: 1.47058823529vw;
+        max-width: 36.7647058824vw;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+
+        a{
+            color: inherit;
+
+            &:hover{
+                color: lighten(#000, 15%);
+            }
+        }
+    }
+
+    p {
+        .font-300;
+
+        font-size: 1.17647058824vw;
+        line-height: 1.83823529412vw;
+        color: #000000;
+        margin-bottom: 2.94117647059vw;
+        max-width: 34.7222222222vw
+    }
+
+    .btn {
+        opacity: 0;
+        // position: absolute;
+        // bottom: 0;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.95588235294vw 1.54411764706vw;
+        border: 2px solid rgba(190, 179, 173, 1);
+
+        img {
+            width: 1.25vw;
+            height: 1.25vw;
+            object-fit: contain;
+            margin-right: 0.73529411764vw;
+        }
+
+        &:hover {
+            background: rgba(190, 179, 173, 0.05);
+        }
+
+        p {
+            margin: 0; //noto sans
+
+            font-size: 1.02941176471vw;
+            display: inline-block;
+
+            line-height: 1.47058823529vw;
+            color: #3D3D3F;
+        }
+
+
+    }
+
+    .certificate_block {
+        z-index: 1;
+        display: flex;
+        align-items: flex-start;
+        width: calc(100% / 11 * 4);
+        position: relative;
+
+        & > div{
+        width: 100%;
+        display: flex;
+        }
+
+        .item {
+            width: 13.6029411765vw !important;
+            height: fit-content;
+            max-height: 19.1911764706vw;
+            margin-right: 2.20588235294vw;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .rotator-arr {
+            width: calc(2.94117647059vw + 4vw);
+            padding: 2vw;
+            margin-right: 0.94117647059vw;
+            margin-top: 1.32352941176vw;
+            cursor: pointer;
+            margin-top: -1vw;
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .certificates_layout {
+        padding-right: 6.25vw;
+        padding-left: 6.25vw;
+        background: white;
+        padding-bottom: 15.9375vw;
+        margin-bottom: 15.625vw;
+        padding-top: 11.875vw;
+    }
+
+    .certificate_card {
+        min-height: unset;
+        margin-bottom: 9.375vw;
+        width: 100%;
+
+        .info_block{
+            width: 100%;
+        }
+
+
+        h2 {
+            .font-400;
+            font-size: 4.375vw;
+            line-height: 6.25vw;
+            letter-spacing: -1px;
+            color: #000000;
+            margin-bottom: 2.8125vw;
+            max-width: 100%;
+        }
+
+        p {
+            font-size: 3.75vw;
+            line-height: 5.625vw;
+            color: #000000;
+            max-width: 100%;
+            margin-bottom: 6.25vw;
+        }
+
+        .btn { 
+            position: relative;
+    opacity: 1;
+    display: inline-flex;
+    padding: 2.8125vw 3.125vw;
+    img{
+
+    width: 3.75vw;
+    height: 3.75vw;
+    margin-right: 1.5625vw;
+    }
+
+    p{
+
+    font-size: 3.75vw;
+    line-height: 5.625vw;
+     span:not(.span){
+        display: none;
+     }
+    }
+
+
+        }
+
+        .certificate_block {
+            display: none;
+            
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .nav_bottom {
+        padding-bottom: 26px;
+    }
+
+    .certificates_layout {
+        padding-right: calc((100vw - 1360px) / 2 + 40px);
+        padding-left: calc((100vw - 1360px) / 2 + 40px);
+        width: 100%;
+        padding-bottom: 132px;
+        margin-bottom: 100px;
+        padding-top: 50px;
+    }
+
+    .certificate_card {
+        display: flex;
+        width: calc(100% / 12 * 11);
+        position: relative;
+        min-width: 184px;
+        margin-bottom: 60px;
+        min-height: 190px;
+
+
+        &:before {
+            content: '';
+            width: calc(100% + 20px);
+            height: calc(100% + 26px + 38px);
+            position: absolute;
+            top: -26px;
+            left: -20px;
+
+        }
+
+        h2 {
+
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            max-width: 502px
+        }
+
+        p {
+
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 40px;
+            max-width: 502px
+        }
+
+        .btn {
+
+            padding: 13px 21px;
+
+            img {
+                width: 17px;
+                height: 17px;
+                object-fit: contain;
+                margin-right: 10px;
+            }
+
+            p {
+
+                font-size: 14px;
+                line-height: 20px;
+
+            }
+
+
+        }
+
+        .certificate_block {
+
+            .item {
+                margin-right: 30px;
+
+
+                width: 184px !important;
+                max-height: 261px;
+            }
+
+            .rotator-arr {
+                width: calc(40px + 40px);
+                padding: 20px;
+                margin-right: 20px;
+                margin-top: -5px;
+            }
+        }
+    }
+}

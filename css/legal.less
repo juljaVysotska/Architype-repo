@@ -1,0 +1,241 @@
+@import url(font.less);
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_bottom {
+    background: white;
+    max-width: 1360px;
+
+    padding-left: calc(2.94117647059vw);
+    padding-right: calc(2.94117647059vw);
+}
+
+main {
+    max-width: 1360px;
+    background: white;
+    margin: 0 auto;
+
+
+    padding-top: 3.67647058824vw;
+    padding-bottom: 8.08823529412vw;
+    margin-bottom: 3.67647058824vw;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 3.16176470588vw;
+
+    }
+}
+
+.block {
+    width: calc((100vw - 2 * 2.94117647059vw) / 12 * 8);
+    margin: 0 auto;
+    margin-bottom: 7.35294117647vw;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        .font-400-raleway;
+        font-size: 5.88235294118vw;
+        line-height: 5.88235294118vw;
+        letter-spacing: -1px;
+        width: 95%;
+        font-feature-settings: 'pnum'on, 'lnum'on;
+
+        color: #000000;
+        margin-bottom: 3.16176470588vw;
+    }
+
+
+    p,
+    ul li {
+        .font-300;
+        font-size: 1.32352941176vw;
+        line-height: 2.20588235294vw;
+
+        color: #000000;
+        margin-bottom: 1.32352941176vw;
+    }
+
+    ul {
+        padding-left: 2.20588235294vw;
+        margin-bottom: 7.35294117647vw;
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .content-wrapp {
+        margin-bottom: 4.77941176471vw;
+        max-height: 140px;
+        overflow: hidden;
+        position: relative;
+
+
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 90px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(360deg, white 40%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        &.open {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .read-more {
+        .font-300;
+        font-size: 1.32352941176vw;
+        line-height: 2.20588235294vw;
+        color: #BEB3AD;
+        display: table;
+        border-bottom: 1px dashed lighten(#555555, 10%);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        max-width: 100%;
+        background: white;
+        margin: 0 auto;
+
+
+        padding-top: 9.6875vw;
+        padding-bottom: 15.625vw;
+        margin-bottom: 3.67647058824vw;
+
+        img {
+            margin-bottom: 9.375vw;
+            width: calc(100% + 2 * 6.25vw);
+            margin-left: -6.25vw;
+
+        }
+    }
+
+    .block {
+        width: calc(100% - 2 * 6.25vw);
+        margin: 0 auto;
+        margin-bottom: 15.625vw;
+
+        h2 {
+
+            font-size: 9.375vw;
+            line-height: 12.5vw;
+            margin-bottom: 9.375vw;
+        }
+
+
+        p,
+        ul li {
+
+            font-size: 4.375vw;
+            line-height: 6.25vw;
+            margin-bottom: 4.375vw;
+        }
+
+        ul {
+            padding-left: 9.375vw;
+            margin-bottom: 10.9375vw;
+
+        }
+
+        .content-wrapp {
+            margin-bottom: 0;
+            max-height: 43.75vw;
+            overflow: hidden;
+            position: relative;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 28.125vw;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: linear-gradient(360deg, white 40%, rgba(255, 255, 255, 0) 100%);
+            }
+        }
+
+        .read-more {
+
+            font-size: 4.375vw;
+            line-height: 6.25vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .nav_bottom {
+        padding-left: calc(40px);
+        padding-right: calc(40px);
+    }
+
+    main {
+        padding-top: 50px;
+        padding-bottom: 112px;
+        margin-bottom: 50px;
+
+        img {
+            margin-bottom: 45px;
+        }
+    }
+
+    .block {
+        width: calc((100% - 2 * 40px) / 12 * 8);
+        margin-bottom: 100px;
+
+        h2 {
+
+            font-size: 70px;
+            line-height: 80px;
+            margin-bottom: 43px;
+        }
+
+        p,
+        ul li {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 18px;
+        }
+
+        ul {
+            padding-left: 30px;
+            margin-bottom: 18px;
+
+        }
+
+        .content-wrapp {
+
+            margin-bottom: 67px;
+        }
+
+        .read-more {
+
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+    }
+
+
+}

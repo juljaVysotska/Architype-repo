@@ -1,0 +1,12 @@
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 770" enable-background="new 0 0 1600 770" xml:space="preserve">
+    <polygon id="red" data-grnumb="02" fill="#FF0000" points="1481,775 1018.5,330 1018.5,317 1188.5,313.5 1603,525.5 1603,775 " />
+    <polygon id="kitchenWall" data-grnumb="01" fill="#00BA00" points="1603,148.5 1185,137 1185,313.5 1603,525.5 " />
+    <polygon id="table" data-grnumb="03" fill="#2800DB" points="338,775 688,281 688,266 720,262.3 720,403.7 855,428 853,234.7 734.7,225.7 464,250 464,263 
+                514.7,270 -7.7,548 -7.7,776.3 " />
+    <path id="kitchen" data-grnumb="04" fill="#D500D8" d="M1119.3,775l-142-286l-6-494.7H1603v154.2L1198.7,137l-2-17.3l-102.7,0.7l-2.7-108h-72.8V330l457.3,440
+                L1119.3,775z M572.7,775L687,447l1-166L338,775H572.7z" />
+    <polygon id="floor" data-grnumb="05" fill="#E1F100" points="1118.1,772.6 977.3,489 975.5,340.3 854.1,340.3 855,428 720,403.7 720,340.3 688,340.3 688,450.3 
+                573.5,772.6 " />
+    <polygon id="wall" fill="#5AFCFF" points="374.3,-2 374.3,345.3 514.7,270 464,263 464,250 734.7,225.7 853,234.7 854.1,340.3 975.5,340.3 
+                971.3,-2 " />
+</svg>

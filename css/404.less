@@ -1,0 +1,269 @@
+@import url(font.less);
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background: #222729;
+    overflow: hidden;
+
+}
+
+.not-found_mask {
+    background: #222729;
+    position: relative;
+    height: 58.0882352941vw;
+    margin-bottom: 3.67647058824vw;
+
+    img {
+        width: 100%;
+        height: 100%;
+        mask: url(404-mask.svg);
+        object-fit: cover;
+        -webkit-mask: url(404-mask.svg);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+
+    }
+
+    .stone_info {
+        position: absolute;
+        top: 26.7647058824vw;
+        left: 20.8088235294vw;
+
+        .name {
+            .font-400-raleway;
+            font-size: 1.76470588235vw;
+            line-height: 2.5vw;
+            letter-spacing: -1px;
+            font-feature-settings: 'pnum'on, 'lnum'on;
+            color: #FFFFFF;
+            margin-bottom: 0.36764705882vw;
+        }
+
+        .company {
+            .font-300;
+            font-size: 0.95588235294vw;
+            line-height: 1.47058823529vw;
+            color: #E3E3E3;
+        }
+    }
+
+    .short_nav {
+        width: calc((100% - 2* 2.94117647059vw) / 12 * 3.5);
+        margin-left: calc((100% - 2* 2.94117647059vw) / 12 * 6 + 2.94117647059vw);
+        position: absolute;
+        top: 30.6617647059vw;
+        left: 0;
+
+        h2 {
+            .font-500-raleway;
+            font-size: 3.08823529412vw;
+            line-height: 3.30882352941vw;
+            /* identical to box height, or 107% */
+
+            display: flex;
+            align-items: center;
+            font-feature-settings: 'pnum'on, 'lnum'on;
+            color: #E3E3E3;
+            margin-bottom: 0.66176470588vw
+        }
+
+        p {
+            .font-300;
+            font-size: 1.32352941176vw;
+            line-height: 2.20588235294vw;
+
+            color: #E3E3E3;
+            margin-bottom: 2.5vw;
+        }
+
+        .layout {
+            display: flex;
+            flex-flow: row wrap;
+
+            div {
+                margin-bottom: 1.91176470588vw;
+                width: 50%;
+            }
+        }
+
+        a {
+            .font-300;
+            font-size: 1.17647058824vw;
+            line-height: 1.17647058824vw;
+            color: #FFFFFF;
+
+            &:hover {
+                color: darken(#FFFFFF, 15%);
+            }
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .not-found_mask {
+        background: #222729;
+        position: relative;
+        height: 58.0882352941vw;
+        margin-bottom: 3.67647058824vw;
+        height: 164.375vw;
+
+        img {
+            width: 36%;
+            height: 100%;
+            mask: url(404-mask-full-mobile.svg);
+            object-fit: cover;
+            -webkit-mask: url(404-mask-full-mobile.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+
+
+        }
+
+        .stone_info {
+            position: absolute;
+            top: 3.125vw;
+            left: 35vw;
+
+            .name {
+
+                font-size: 6.25vw;
+                line-height: 10.625vw;
+                margin-bottom: -1vw;
+            }
+
+            .company {
+
+                font-size: 3.75vw;
+                line-height: 6.25vw;
+            }
+        }
+
+        .short_nav {
+            width: calc((100% - 2* 6.25vw) / 6 * 4);
+            margin-left: calc((100% - 2* 6.25vw) / 6 * 2 + 6.25vw);
+            position: absolute;
+            top: 47.8125vw;
+            left: 0;
+
+            h2 {
+
+                font-size: 9.375vw;
+                line-height: 12.5vw;
+                margin-bottom: 3.125vw
+            }
+
+            p {
+
+                font-size: 3.75vw;
+                line-height: 5.625vw;
+                margin-bottom: 9.375vw;
+            }
+
+            .layout {
+                display: block;
+
+                div {
+                    margin-bottom: 6.25vw;
+                    width: 100%;
+                }
+            }
+
+            a {
+
+                font-size: 5vw;
+                line-height: 5vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .not-found_mask {
+        background: #222729;
+        position: relative;
+        height: 791px;
+        margin-bottom: 50px;
+        max-width: 1360px;
+        margin-right: auto;
+        margin-left: auto;
+
+        img {
+            height: auto;
+            width: 1602px;
+            margin-left: -180px;
+            margin-right: -88px;
+            margin-top: -360px;
+            mask: url(404-mask-full.svg);
+            object-fit: cover;
+            -webkit-mask: url(404-mask-full.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            max-width: 1602px;
+        }
+
+        .stone_info {
+            position: absolute;
+            top: 364px;
+            left: 283px;
+
+            .name {
+
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 5px;
+            }
+
+            .company {
+
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+
+        .short_nav {
+            width: calc((100% - 2* 2.94117647059vw) / 12 * 3.5);
+            margin-left: calc((100% - 2* 2.94117647059vw) / 12 * 6 + 2.94117647059vw);
+            position: absolute;
+            top: 417px;
+            left: 0;
+
+            h2 {
+
+                font-size: 42px;
+                line-height: 45px;
+                margin-bottom: 9px
+            }
+
+            p {
+
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 34px;
+            }
+
+            .layout {
+                display: flex;
+                flex-flow: row wrap;
+
+                div {
+                    margin-bottom: 26px;
+                    width: 50%;
+                }
+            }
+
+            a {
+
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+    }
+}

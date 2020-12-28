@@ -1,0 +1,46 @@
+@import url(font.less);
+
+.hover-cards_layout{
+	width: calc(100% / 12 * 11);
+	max-width: 1066px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+.stone_cards_layout{
+	width: calc((100vw - 2 * 2.94117647vw)/ 12 * 10)
+}
+@media screen and (max-width: 768px) {
+	.nav_bottom h1{
+		display: block;
+	}
+	.spy-navigation{
+		margin-bottom: 11.875vw
+	}
+	.hover-cards_layout,
+	.stone_cards_layout{
+		width: calc((100% - 2 * 6.25vw));
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.stone_cards_layout{
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.stone_card:nth-child(2n){
+		margin-right: 0;
+	}
+}
+
+
+@media screen and (min-width: 1360px) {
+	.hover-cards_layout,
+	.stone_cards_layout{
+		max-width: 1066px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
