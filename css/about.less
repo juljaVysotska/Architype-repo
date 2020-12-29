@@ -68,14 +68,16 @@ header {
             white-space: nowrap;
 
             mark {
-                background: #BEB3AD;
+                // background: #BEB3AD;
                 color: white;
-                background: transparent;
+                // background: transparent;
                 position: relative;
+                background: linear-gradient(180deg,rgba(241,78,16,0) 25%,#945C1F 25%);
+
 
                 &:before {
                     content: '';
-                    display: block;
+                    display: none;
                     width: calc(100% + 0.8vw * 2);
                     position: absolute;
                     bottom: 0.8vw;
@@ -247,7 +249,7 @@ header {
 
     h2 {
         .font-400-raleway;
-        font-size: 4.11764705882vw;
+        font-size: 3.67647058824vw;
         line-height: 4.41176470588vw;
         display: flex;
         align-items: center;
@@ -256,7 +258,6 @@ header {
         color: #FFFFFF;
         margin-bottom: 4.55882352941vw;
     }
-
 
     .content-wrapp {
         display: flex;
@@ -281,7 +282,7 @@ header {
 
             span {
                 .font-400-raleway;
-                font-size: 10.2941176471vw;
+                font-size: 7.86764705882vw;
                 line-height: 5.88235294118vw;
                 letter-spacing: -7px;
                 font-feature-settings: 'pnum'on, 'lnum'on;
@@ -556,13 +557,6 @@ div.block-with-image {
                 margin-bottom: 8.4375vw;
                 white-space: unset;
 
-                mark {
-                    background: rgb(2, 0, 36);
-                    background: -moz-linear-gradient(180deg, rgba(2, 0, 36, 0) 33%, rgba(190, 179, 173, 1) 33%, rgba(190, 179, 173, 1) 95%, rgba(190, 179, 173, 0) 95%);
-                    background: -webkit-linear-gradient(180deg, rgba(2, 0, 36, 0) 33%, rgba(190, 179, 173, 1) 33%, rgba(190, 179, 173, 1) 95%, rgba(190, 179, 173, 0) 95%);
-                    background: linear-gradient(180deg, rgba(2, 0, 36, 0) 33%, rgba(190, 179, 173, 1) 33%, rgba(190, 179, 173, 1) 95%, rgba(190, 179, 173, 0) 95%);
-                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#BEB3AD", GradientType=1);
-                }
 
                 mark:before,
                 div,
@@ -663,8 +657,8 @@ div.block-with-image {
 
         h2 {
 
-            font-size: 9.375vw;
-            line-height: 12.5vw;
+            font-size: 8.75vw;
+            line-height: 9.375vw;
             margin-bottom: 13.4375vw;
         }
 
@@ -692,10 +686,10 @@ div.block-with-image {
 
                 span {
 
-                    font-size: 27.34375vw;
+                    font-size: 21.875vw;
                     line-height: 15.625vw;
                     left: -7.5vw;
-                    top: -6.25vw;
+                    top: -2.8125vw;
                 }
             }
 
@@ -899,7 +893,7 @@ div.block-with-image {
         &:before {
             width: calc((1360px - 2 * 40px) / 12 * 9 + 40px + (100vw - ((1360px - 2 * 40px) / 12 * 9))/2);
             left: calc(-40px - (100vw - ((1360px - 2 * 40px) / 12 * 9))/2);
-            
+
         }
 
 
@@ -941,7 +935,7 @@ div.block-with-image {
 
         h2 {
 
-            font-size: 56px;
+            font-size: 50px;
             line-height: 60px;
             margin-bottom: 62px;
         }
@@ -957,10 +951,10 @@ div.block-with-image {
                 margin-bottom: 26px;
 
                 span {
-                    font-size: 140px;
-                    line-height: 80px;
-                    top: -36px;
-                    left: -62px;
+font-size: 107px;
+line-height: 80px;
+                    top: -26px;
+                    left: -63px;
 
                 }
             }

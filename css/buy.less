@@ -208,6 +208,7 @@
     }
     .tel {
         display: inline-block;
+        white-space: nowrap;
 
         .font-500;
         font-size: 1.02941176471vw;
@@ -329,9 +330,8 @@
 
     .search-result {
         .title-section {
-
-font-size: 32px;
-line-height: 40px;
+font-size: 25px;
+line-height: 30px;
             margin-bottom: 28px;
         }
     }
@@ -537,8 +537,8 @@ line-height: 40px;
 
         .title-section {
 
-            font-size: 8.75vw;
-            line-height: 9.375vw;
+font-size: 7.8125vw;
+line-height: 9.375vw;
             margin-bottom: 8.75vw;
         }
     }
@@ -656,12 +656,14 @@ line-height: 40px;
 
         a.decorative-link{
             margin-left: 0;
-            padding-left: 5vw;
+            padding-left: 10vw;
             display: block;
 
-            &:after{
+            &:after,&:hover:after{
                 left: 0;
             }
+
+
         }
     }
 

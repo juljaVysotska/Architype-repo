@@ -158,7 +158,7 @@ header {
         z-index: 99;
         padding-top: 15.8088235294vw;
         margin-left: 18.6029411765vw;
-        width: 52.5735294118vw;
+        width: 56.5735294118vw;
 
         h2 {
             .font-400-raleway;
@@ -177,10 +177,11 @@ header {
                 // background: #BEB3AD;
                 background: transparent;
                 position: relative;
+                background: linear-gradient(180deg,rgba(241,78,16,0) 25%,#945C1F 25%);
 
                 &:before {
                     content: '';
-                    display: block;
+                    display: none;
                     width: calc(100% + 0.8vw * 2);
                     position: absolute;
                     bottom: 0.8vw;
@@ -260,14 +261,15 @@ header {
 
 .block-with-image {
     .block-title mark {
-        background: #BEB3AD;
+        // background: #BEB3AD;
         color: white;
         background: transparent;
         position: relative;
 
+        background: linear-gradient(180deg,rgba(241,78,16,0) 25%,#945C1F 25%);
         &:before {
             content: '';
-            display: block;
+            display: none;
             width: calc(100% + 0.8vw * 2);
             position: absolute;
             bottom: 0.8vw;
@@ -308,7 +310,7 @@ header {
     }
 
     h2.block-title {
-        width: 80%;
+        width: 85%;
         margin-bottom: 4.26470588235vw;
 
         color: #FFFFFF;
@@ -337,12 +339,12 @@ header {
 
             right: unset;
             left: -3.16176470588vw;
-        }
-
-        &:after {
             background: transparent url(../img/link-shape/left-white-top-right.svg) center center no-repeat;
             background-size: contain;
+        }
 
+        &:hover:after{
+            left: -2vw;
         }
     }
 
@@ -434,16 +436,15 @@ header {
         color: white;
 
         &:after {
-
             right: unset;
             left: -3.16176470588vw;
-        }
-
-        &:after {
-
-
             background: transparent url(../img/link-shape/left-white-top-right.svg) center center no-repeat;
             background-size: contain;
+        }
+
+
+        &:hover:after{
+            left: -2vw;
         }
     }
 
@@ -483,7 +484,7 @@ header {
 .block-with-image {
     .block-title {
         width: auto;
-        .font-500-raleway;
+        .font-400-raleway;
         font-size: 3.08823529412vw;
         line-height: 3.30882352941vw;
         font-feature-settings: 'pnum'on, 'lnum'on;
@@ -508,6 +509,10 @@ header {
 
             background: transparent url(../img/link-shape/left-color-top-right.svg) center center no-repeat;
             background-size: contain;
+        }
+
+        a.decorative-link:hover:after{
+            left: -2vw;
         }
     }
 }
@@ -617,15 +622,14 @@ header {
 
             right: unset;
             left: -3.16176470588vw;
-        }
-
-        &:after {
-
-
             background: transparent url(../img/link-shape/white-top-right.svg) center center no-repeat;
             background-size: contain;
         }
+        &:hover:after{
+            left: -2vw;
+        }
     }
+
 
     .collab_statistic {
         &:last-of-type {
@@ -725,48 +729,42 @@ div.collab_statistic {
                 margin-bottom: 7.8125vw;
 
                 span {
+                
                     white-space: nowrap;
-                    // background: #BEB3AD;   
-                    // background: rgb(2,0,36);
-                    // background: -moz-linear-gradient(180deg, rgba(2,0,36,0) 33%, rgba(190, 179, 173,1) 33%, rgba(190, 179, 173,1) 95%, rgba(190, 179, 173,0) 95%);
-                    // background: -webkit-linear-gradient(180deg, rgba(2,0,36,0) 33%, rgba(190, 179, 173,1) 33%, rgba(190, 179, 173,1) 95%, rgba(190, 179, 173,0) 95%);
-                    // background: linear-gradient(180deg, rgba(2,0,36,0) 33%, rgba(190, 179, 173,1) 33%, rgba(190, 179, 173,1) 95%, rgba(190, 179, 173,0) 95%);
-                    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#BEB3AD",GradientType=1);
-
                 }
 
                 mark {
 
                     display: inline-block;
                     padding-right: 3.125vw;
-
-                    &:before {
-                        height: 9.0625vw;
-                    }
-
-                    &:last-of-type {
-                        padding-right: 0;
-                    }
-                }
-
-                span mark:last-child:before {
-                    width: calc(110%);
-                    left: -10%;
-                    display: inline-block;
-                }
-
-                mark {
-                    // background: rgb(2, 0, 36);
-                    // background: -moz-linear-gradient(180deg, rgba(2, 0, 36, 0) 33%, rgba(190, 179, 173, 1) 33%, rgba(190, 179, 173, 1) 95%, rgba(190, 179, 173, 0) 95%);
-                    // background: -webkit-linear-gradient(180deg, rgba(2, 0, 36, 0) 33%, rgba(190, 179, 173, 1) 33%, rgba(190, 179, 173, 1) 95%, rgba(190, 179, 173, 0) 95%);
-                    // background: linear-gradient(180deg, rgba(2, 0, 36, 0) 33%, rgba(190, 179, 173, 1) 33%, rgba(190, 179, 173, 1) 95%, rgba(190, 179, 173, 0) 95%);
-                    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#BEB3AD", GradientType=1);
+                    background: transparent;
 
                     &:before{
-                        background: rgba(190, 179, 173, 1);
+                        display: block;background: linear-gradient(180deg,rgba(241,78,16,0) 25%,#945C1F 25%);
+                        height: 75%;
                     }
+
+                    &:first-child{
+                        &:before{
+                            padding-right: 20px;
+                        }
+                    }
+
+                    // &:before {
+                    //     height: 9.0625vw;
+                    //     background: rgba(190, 179, 173, 1);
+                    // }
+
+                    // &:last-of-type {
+                    //     padding-right: 0;
+                    // }
                 }
 
+                // span mark:last-child:before {
+                //     width: calc(110%);
+                //     left: -10%;
+                //     display: inline-block;
+                // }
 
 
                 div,
@@ -778,14 +776,19 @@ div.collab_statistic {
             a.decorative-link {
                 // display: none;
                 margin-left: unset;
+                padding-left: 10vw;
 
                 &:after {
                     right: unset;
-
-                    left: -5vw;
-                    background: transparent url(../img/link-shape/white-top-right.svg) center center no-repeat;
-                    background-size: cover;
+                    left: 0;
+                    background: transparent url(../img/link-shape/left-white-top-right.svg) center center no-repeat;
+                    background-size: contain;
                     top: -7.1875vw;
+                }
+
+                &:hover:after{
+                    left: 0;
+                    transform: unset;
                 }
             }
         }
@@ -828,9 +831,8 @@ div.collab_statistic {
     .block-with-image {
         .block-title {
 
-            font-size: 9.375vw;
-            line-height: 12.5vw;
-
+                font-size: 8.75vw;
+                line-height: 10.9375vw;
             mark:before {
                 height: 9.0625vw;
             }
@@ -865,8 +867,8 @@ div.collab_statistic {
         h2.block-title {
             width: 100%;
             margin-bottom: 8.4375vw;
-            font-size: 9.375vw;
-            line-height: 12.5vw;
+                font-size: 8.75vw;
+                line-height: 10.9375vw;
 
             br,
             div {
@@ -902,7 +904,7 @@ div.collab_statistic {
             padding-left: 10vw;
             display: block;
 
-            &:after {
+            &:after, &:hover:after {
                 left: 0;
             }
         }
@@ -942,9 +944,8 @@ div.collab_statistic {
             margin: 0;
             margin-bottom: 8.4375vw;
             width: 100%;
-
-            font-size: 9.375vw;
-            line-height: 12.5vw;
+                font-size: 8.75vw;
+                line-height: 10.9375vw;
 
             br,
             div {
@@ -1115,11 +1116,11 @@ div.collab_statistic {
         .content_wrapp {
             padding-top: 215px;
             margin-left: calc(253px + (100vw - 1360px) / 2);
-            width: 715px;
+            width: 850px;
 
             h2 {
 
-                font-size: 80px;
+                font-size: 70px;
                 line-height: 80px;
                 margin-bottom: 32px;
 

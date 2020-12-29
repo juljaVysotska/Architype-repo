@@ -27,7 +27,7 @@
     }
 
     .title {
-        .font-500-raleway;
+        .font-400-raleway;
         font-size: 4.11764705882vw;
         line-height: 4.41176470588vw;
         font-feature-settings: 'pnum'on, 'lnum'on;
@@ -110,6 +110,12 @@
         right: unset;
         left: -3.16176470588vw;
     }
+
+    a.decorative-link:hover{
+        &:after{
+            left: -2vw;
+        }
+    }
 }
 
 
@@ -129,10 +135,15 @@
 
 
 
-        background: transparent url(../img/link-shape/left-color-top-right.svg) center center no-repeat;
-        background-size: contain;
+            background: transparent url(../img/link-shape/left-color-top-right.svg) center center no-repeat;
+            background-size: contain;
             right: unset;
             left: -3.16176470588vw;
+        }
+        a.decorative-link:hover{
+            &:after{
+                left: -2vw;
+            }
         }
     }
 
@@ -160,6 +171,12 @@
         background-size: contain;
             right: unset;
             left: -3.16176470588vw;
+        }
+
+        a.decorative-link:hover{
+            &:after{
+                left: -2vw;
+            }
         }
 
     }
@@ -199,6 +216,10 @@
         background-size: contain;
             right: unset;
             left: -3.16176470588vw;
+        }
+
+        a.decorative-link:hover:after{
+            left: -2vw;
         }
 
 

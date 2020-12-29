@@ -64,8 +64,8 @@ a.decorative-link {
 
     @media screen and (min-width: 768px) {
         &:hover:after {
-            transform: translateX(35%);
-            transition: 0.3s transform ease-out;
+            // transform: translateX(35%);
+            transition: 0.3s all ease-out;
         }
     }
 
@@ -782,6 +782,10 @@ nav {
                 .actual-lang {
 
                     color: #ffffff;
+
+                    &:after {
+                        filter: invert(1);
+                    }
                 }
 
 
@@ -1131,11 +1135,10 @@ nav.nav-light .information .lang-picker.open .actual-lang {
 
         h1,
         .subtitle {
-
             font-size: 8.75vw;
-            line-height: 8.75vw;
+            line-height: 9.375vw;
             color: #222729;
-            .font-500-raleway;
+            .font-400-raleway;
         }
 
         h1 {
@@ -2543,8 +2546,8 @@ footer {
 
             h2 {
 
-                font-size: 9.375vw;
-                line-height: 12.5vw;
+                font-size: 8.75vw;
+                line-height: 10.9375vw;
                 margin-bottom: 8.4375vw;
                 color: #FFFFFF;
             }
@@ -3172,7 +3175,7 @@ div.info_card {
         margin-bottom: 2.20588235294vw;
 
         h2 {
-            .font-500-raleway;
+            .font-400-raleway;
             font-size: 4.11764705882vw;
             line-height: 4.41176470588vw;
             color: #FFFFFF;
@@ -3428,8 +3431,8 @@ div.info_card {
 
         h2 {
 
-            font-size: 9.375vw;
-            line-height: 12.5vw;
+                font-size: 8.75vw;
+                line-height: 10.9375vw;
             margin-bottom: 5.625vw;
         }
     }
@@ -3534,7 +3537,7 @@ div.info_card {
             &:after {
                 right: 0;
                 top: -6.5625vw;
-                background: transparent url(../img/link-shape/red-top-left.svg) center center no-repeat;
+                background: transparent url(../img/link-shape/right-color-top-left.svg) center center no-repeat;
                 background-size: cover;
             }
         }
@@ -4014,8 +4017,8 @@ div.info_card {
         }
 
         input:checked~.checkmark {
-            background-color: #BEB3AD;
-            border: 1px solid #BEB3AD;
+            background-color: #2E2A29;
+            border: 1px solid #2E2A29;
 
         }
 
@@ -4564,7 +4567,7 @@ div.info_card {
     }
 
     .product_name {
-        .font-500-raleway;
+        .font-400-raleway;
         font-size: 1.76470588235vw;
         line-height: 2.5vw;
         letter-spacing: -1px;
@@ -5461,7 +5464,7 @@ div.info_card {
 
     .block-title {
         .font-400-raleway;
-        font-size: 4.11764705882vw;
+        font-size: 3.67647058824vw;
         line-height: 4.41176470588vw;
         font-feature-settings: 'pnum'on, 'lnum'on;
         color: #FFFFFF;
@@ -5602,10 +5605,9 @@ div.info_card {
             width: 100%;
             margin: 0;
             margin-bottom: 8.4375vw;
-
             font-size: 8.75vw;
             line-height: 10.5vw;
-            .font-500-raleway;
+            .font-400-raleway;
         }
 
         .image-section {
@@ -5697,7 +5699,7 @@ div.info_card {
 
         .block-title {
 
-            font-size: 56px;
+            font-size: 50px;
             line-height: 60px;
             width: 659px;
             margin-bottom: 58px;
@@ -5924,7 +5926,7 @@ div.info_card {
 
     p {
         .font-300;
-        font-size: 1.17647058824vw;
+        font-size: 3.67647058824vw;
         line-height: 1.83823529412vw;
         color: #555555;
         margin-bottom: 2.94117647059vw;
@@ -5933,9 +5935,14 @@ div.info_card {
     .decorative-link:after {
         right: 0;
         left: -4.14705882353vw;
-
         background: transparent url(../img/link-shape/left-color-top-right.svg) center center no-repeat;
         background-size: contain;
+    }
+
+    .decorative-link:hover{
+        &:after{
+            left: -2vw;
+        }
     }
 }
 
@@ -5979,12 +5986,12 @@ div.info_card {
             margin-bottom: 9.0625vw;
 
             h2 {
-                font-size: 9.375vw;
-                line-height: 12.5vw;
+                font-size: 8.75vw;
+                line-height: 10.9375vw;
                 margin-bottom: 8.4375vw;
                 margin-left: 0;
                 display: inline-block;
-                .font-500-raleway;
+                .font-400-raleway;
             }
 
             p {
@@ -6019,7 +6026,7 @@ div.info_card {
 
         h2 {
 
-            font-size: 56px;
+            font-size: 50px;
             line-height: 60px;
             margin-left: -47px;
             margin-bottom: 29px;
@@ -6052,8 +6059,9 @@ div.info_card {
 
         h2 {
             .font-400-raleway;
-            font-size: 4.11764705882vw;
-            line-height: 4.41176470588vw;
+
+        font-size: 3.67647058824vw;
+        line-height: 4.41176470588vw;
             font-feature-settings: 'pnum'on, 'lnum'on;
             color: #222729;
             margin-left: -4.11764705882vw;
@@ -6077,6 +6085,12 @@ div.info_card {
             right: unset;
             background: transparent url(../img/link-shape/left-color-top-right.svg) center center no-repeat;
             background-size: contain;
+        }
+
+        .decorative-link{
+            &:hover:after{
+                left: -2vw;
+            }
         }
 
         .brandcard {
@@ -6148,7 +6162,7 @@ div.info_card {
         }
 
         .wrapp {
-            width: 93%;
+            width: 105%;
             position: relative;
         }
 
@@ -6288,7 +6302,7 @@ div.info_card {
                 line-height: 10.5vw;
                 margin-bottom: 8.4375vw;
                 margin-left: 0;
-                .font-500-raleway;
+                .font-400-raleway;
             }
 
             p {
@@ -6326,6 +6340,9 @@ div.info_card {
     .small-block-with-image.buy-section {
         margin-bottom: 15.625vw;
 
+
+
+
         .img-section {
             display: none;
         }
@@ -6336,9 +6353,8 @@ div.info_card {
             padding: 15.625vw 6.25vw 16.25vw 6.25vw;
 
             h2 {
-
-                font-size: 9.375vw;
-                line-height: 12.5vw;
+font-size: 8.75vw;
+line-height: 10.5vw;
                 margin-bottom: 8.4375vw;
             }
 
@@ -6361,6 +6377,9 @@ div.info_card {
     .small-block-with-image.buy-section {
         .text-section {
             padding-bottom: 61.25vw;
+            .wrapp{
+            width: 100%;
+        }
         }
 
         .img-section {
@@ -6390,7 +6409,7 @@ div.info_card {
 
             h2 {
 
-                font-size: 56px;
+                font-size: 50px;
                 line-height: 60px;
                 margin-left: -56px;
                 margin-bottom: 20px;
@@ -6466,7 +6485,7 @@ div.info_card {
         .text-section {
             width: calc((100% - 40px * 2) / 12 * 9);
             margin-left: calc((100% - 40px * 2) / 12 + 40px);
-            padding: 107px calc(100% / 12 * 4) 107px 107px;
+            padding: 107px calc(100% / 12 * 3.5) 107px 107px;
 
 
 
@@ -6547,7 +6566,7 @@ div.info_card {
         h2 {
             width: calc(45%);
             .font-400-raleway;
-            font-size: 4.11764705882vw;
+            font-size: 3.67647058824vw;
             line-height: 4.41176470588vw;
             font-feature-settings: 'pnum'on, 'lnum'on;
             color: #222729;
@@ -6611,8 +6630,8 @@ div.info_card {
 
             h2 {
 
-                font-size: 9.375vw;
-                line-height: 12.5vw;
+                font-size: 8.75vw;
+                line-height: 9.375vw;
                 width: 100%;
             }
 
@@ -6678,7 +6697,7 @@ div.info_card {
             }
 
             h2 {
-                font-size: 56px;
+                font-size: 50px;
                 line-height: 60px;
 
             }
@@ -6783,8 +6802,8 @@ div.info_card {
 
             h2 {
 
-                font-size: 9.375vw;
-                line-height: 12.5vw;
+                font-size: 8.75vw;
+                line-height: 9.375vw;
                 margin-bottom: 9.375vw;
             }
 
@@ -6927,7 +6946,7 @@ div.info_card {
 
         h2 {
             .font-400-raleway;
-            font-size: 4.11764705882vw;
+            font-size: 3.67647058824vw;
             line-height: 4.41176470588vw;
             font-feature-settings: 'pnum'on, 'lnum'on;
             color: #222729;
@@ -6977,6 +6996,7 @@ div.info_card {
 
             &:hover &:after {
                 transform: unset;
+
             }
         }
 
@@ -6990,6 +7010,7 @@ div.info_card {
 
         .gallery_header {
             margin: 0 6.25vw 21.875vw 6.25vw;
+            width: 85%;
 
             a.decorative-link {
                 display: none;
@@ -6997,8 +7018,9 @@ div.info_card {
 
             h2 {
 
-                font-size: 9.375vw;
-                line-height: 12.5vw;
+
+                font-size: 8.75vw;
+                line-height: 9.375vw;
                 width: 100%;
             }
         }
@@ -7039,7 +7061,7 @@ div.info_card {
 
             h2 {
 
-                font-size: 56px;
+                font-size: 50px;
                 line-height: 60px;
             }
         }
@@ -7128,7 +7150,7 @@ div.info_card {
 
         h2 {
             .font-400-raleway;
-            font-size: 4.11764705882vw;
+            font-size:3.67647058824vw;
             line-height: 4.41176470588vw;
             font-feature-settings: 'pnum'on, 'lnum'on;
             color: #FFFFFF;
@@ -7167,7 +7189,7 @@ div.info_card {
 
         p {
             .font-400-raleway;
-            font-size: 1.83823529412vw;
+            font-size: 1.61764705882vw;
             line-height: 2.5vw;
             letter-spacing: -1px;
             font-feature-settings: 'pnum'on, 'lnum'on;
@@ -7223,8 +7245,9 @@ div.info_card {
 
             h2 {
 
-                font-size: 9.375vw;
-                line-height: 12.5vw;
+
+                font-size: 8.75vw;
+                line-height: 9.375vw;
             }
 
             a.decorative-link {
@@ -7297,7 +7320,7 @@ div.info_card {
 
             h2 {
 
-                font-size: 56px;
+                font-size: 50px;
                 line-height: 60px;
 
             }
@@ -7316,8 +7339,9 @@ div.info_card {
 
             p {
 
-                font-size: 25px;
-                line-height: 34px;
+            
+font-size: 22px;
+line-height: 34px;
             }
         }
 
@@ -7342,7 +7366,7 @@ div.info_card {
 
         h2 {
             .font-400-raleway;
-            font-size: 4.11764705882vw;
+            font-size: 3.67647058824vw;
             line-height: 4.41176470588vw;
             font-feature-settings: 'pnum'on, 'lnum'on;
             color: #222729;
@@ -7470,8 +7494,8 @@ div.info_card {
 
             h2 {
                 width: 100%;
-                font-size: 9.375vw;
-                line-height: 12.5vw;
+                font-size: 8.75vw;
+                line-height: 9.375vw;
             }
         }
 
@@ -7555,7 +7579,7 @@ div.info_card {
 
             h2 {
 
-                font-size: 56px;
+                font-size: 50px;
                 line-height: 60px;
 
             }
@@ -8201,7 +8225,7 @@ div.info_card {
 
         h2 {
             .font-400-raleway;
-            font-size: 4.11764705882vw;
+            font-size: 3.67647058824vw;
             line-height: 4.41176470588vw;
             font-feature-settings: 'pnum'on, 'lnum'on;
             color: #222729;
@@ -8379,8 +8403,8 @@ div.info_card {
             width: 100%;
 
             h2 {
-                font-size: 9.375vw;
-                line-height: 12.5vw;
+                font-size: 8.75vw;
+                line-height: 9.375vw;
             }
 
             p {
@@ -8424,10 +8448,9 @@ div.info_card {
 
 
             h2 {
-
-                font-size: 9.375vw;
-                line-height: 12.5vw;
                 margin-bottom: 8.4375vw;
+                font-size: 8.75vw;
+                line-height: 10.9375vw;
 
                 br {
                     display: none;
@@ -8475,7 +8498,7 @@ div.info_card {
 
             h2 {
 
-                font-size: 56px;
+                font-size: 50px;
                 line-height: 60px;
                 margin-bottom: 30px;
             }
@@ -8874,7 +8897,7 @@ div.info_card {
 
     h2 {
         .font-400-raleway;
-        font-size: 4.11764705882vw;
+        font-size: 3.67647058824vw;
         line-height: 4.41176470588vw;
         font-feature-settings: 'pnum'on, 'lnum'on;
         color: #222729;
@@ -8927,8 +8950,8 @@ div.info_card {
             width: calc(100% - 2 * 6.25vw);
             margin: 0 auto;
             margin-bottom: 10.9375vw;
-            font-size: 9.375vw;
-            line-height: 12.5vw;
+            font-size: 8.75vw;
+            line-height: 9.375vw;
 
         }
 
@@ -8980,7 +9003,7 @@ div.info_card {
 
         h2 {
 
-            font-size: 56px;
+            font-size: 50px;
             line-height: 60px;
             width: calc((1360px - 2 * 40px) / 12 * 7);
             margin-left: calc((1360px - 2 * 40px) / 12 + 40px);
@@ -9021,7 +9044,11 @@ div.info_card {
 
         a.decorative-link {
             &:after {
-                left: -3vw;
+                left: -3.16176471vw;
+            }
+
+            &:hover:after{
+                left: -2vw;
             }
         }
     }
