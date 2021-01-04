@@ -2019,9 +2019,16 @@ footer {
 
         .company-services {
             width: 100%;
+            display: block;
 
             div:not(.services-mobile) {
                 display: none;
+            }
+
+            .services-mobile--block{
+                ul {
+                    width: 100%
+                }
             }
 
             .services-mobile {
@@ -2034,6 +2041,12 @@ footer {
 
                     &:last-of-type {
                         margin-right: 0;
+                    }
+                }
+
+                &.services-mobile--block{
+                    ul {
+                        width: 100%
                     }
                 }
 
