@@ -389,6 +389,7 @@ document.addEventListener('click', (e) => {
     if (!e.target.closest('.dropdown')) {
 
         dropdown.forEach((el) => {
+            el.classList.remove('active');
             el.closest('.dropdown').classList.remove('dropdown-open');
         });
     }
