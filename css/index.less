@@ -177,7 +177,7 @@ header {
                 // background: #BEB3AD;
                 background: transparent;
                 position: relative;
-                background: linear-gradient(180deg,rgba(241,78,16,0) 25%,#945C1F 25%);
+                background: linear-gradient(180deg, rgba(241, 78, 16, 0) 25%, #945C1F 25%);
 
                 &:before {
                     content: '';
@@ -266,7 +266,8 @@ header {
         background: transparent;
         position: relative;
 
-        background: linear-gradient(180deg,rgba(241,78,16,0) 25%,#945C1F 25%);
+        background: linear-gradient(180deg, rgba(241, 78, 16, 0) 25%, #945C1F 25%);
+
         &:before {
             content: '';
             display: none;
@@ -343,7 +344,7 @@ header {
             background-size: contain;
         }
 
-        &:hover:after{
+        &:hover:after {
             left: -2vw;
         }
     }
@@ -443,7 +444,7 @@ header {
         }
 
 
-        &:hover:after{
+        &:hover:after {
             left: -2vw;
         }
     }
@@ -511,7 +512,7 @@ header {
             background-size: contain;
         }
 
-        a.decorative-link:hover:after{
+        a.decorative-link:hover:after {
             left: -2vw;
         }
     }
@@ -574,6 +575,10 @@ header {
 .designer-collaboration_block {
     padding-bottom: 9.55882352941vw;
 
+    &+.small-block-with-image.buy-section {
+        margin-top: 14vw
+    }
+
     .text-section {
         width: calc((100vw - 2 * 2.94117647059vw) / 12 * 5 + 2vw);
         margin-right: calc((100vw - 2 * 2.94117647059vw) / 12 + 2.94117647059vw);
@@ -625,7 +630,8 @@ header {
             background: transparent url(../img/link-shape/white-top-right.svg) center center no-repeat;
             background-size: contain;
         }
-        &:hover:after{
+
+        &:hover:after {
             left: -2vw;
         }
     }
@@ -729,7 +735,7 @@ div.collab_statistic {
                 margin-bottom: 7.8125vw;
 
                 span {
-                
+
                     white-space: nowrap;
                 }
 
@@ -739,13 +745,14 @@ div.collab_statistic {
                     padding-right: 3.125vw;
                     background: transparent;
 
-                    &:before{
-                        display: block;background: linear-gradient(180deg,rgba(241,78,16,0) 25%,#945C1F 25%);
+                    &:before {
+                        display: block;
+                        background: linear-gradient(180deg, rgba(241, 78, 16, 0) 25%, #945C1F 25%);
                         height: 75%;
                     }
 
-                    &:first-child{
-                        &:before{
+                    &:first-child {
+                        &:before {
                             padding-right: 20px;
                         }
                     }
@@ -786,7 +793,7 @@ div.collab_statistic {
                     top: -7.1875vw;
                 }
 
-                &:hover:after{
+                &:hover:after {
                     left: 0;
                     transform: unset;
                 }
@@ -831,8 +838,9 @@ div.collab_statistic {
     .block-with-image {
         .block-title {
 
-                font-size: 8.75vw;
-                line-height: 10.9375vw;
+            font-size: 8.75vw;
+            line-height: 10.9375vw;
+
             mark:before {
                 height: 9.0625vw;
             }
@@ -867,8 +875,8 @@ div.collab_statistic {
         h2.block-title {
             width: 100%;
             margin-bottom: 8.4375vw;
-                font-size: 8.75vw;
-                line-height: 10.9375vw;
+            font-size: 8.75vw;
+            line-height: 10.9375vw;
 
             br,
             div {
@@ -904,7 +912,8 @@ div.collab_statistic {
             padding-left: 10vw;
             display: block;
 
-            &:after, &:hover:after {
+            &:after,
+            &:hover:after {
                 left: 0;
             }
         }
@@ -944,8 +953,8 @@ div.collab_statistic {
             margin: 0;
             margin-bottom: 8.4375vw;
             width: 100%;
-                font-size: 8.75vw;
-                line-height: 10.9375vw;
+            font-size: 8.75vw;
+            line-height: 10.9375vw;
 
             br,
             div {
@@ -984,7 +993,8 @@ div.collab_statistic {
             width: 80%;
             display: block;
             padding-left: 10vw;
-            &:after{
+
+            &:after {
                 left: 0;
                 top: -5vw;
             }
@@ -995,11 +1005,12 @@ div.collab_statistic {
     .designer_block.float-image {
         display: none;
     }
-    .block-with-image .content-wrapp a.decorative-link:after{
+
+    .block-with-image .content-wrapp a.decorative-link:after {
         left: 0;
 
-            background: transparent url(../img/link-shape/left-white-top-right.svg) center center no-repeat;
-            background-size: contain;
+        background: transparent url(../img/link-shape/left-white-top-right.svg) center center no-repeat;
+        background-size: contain;
     }
 
     .designer-collaboration_block {
@@ -1011,7 +1022,7 @@ div.collab_statistic {
             top: -6.5625vw;
         }
 
-        a.decorative-link{
+        a.decorative-link {
             padding-left: 10vw;
         }
 
@@ -1078,7 +1089,7 @@ div.collab_statistic {
 
             font-size: 15vw;
             line-height: 18.75vw;
-            width:20.3125vw;
+            width: 20.3125vw;
             margin-right: 6.25vw
         }
 
@@ -1173,8 +1184,9 @@ div.collab_statistic {
         }
 
         h2.block-title {
-            margin-bottom: 58px;font-size: 50px;
-    line-height: 60px;
+            margin-bottom: 58px;
+            font-size: 50px;
+            line-height: 60px;
         }
 
         .text-section {
@@ -1362,6 +1374,10 @@ div.collab_statistic {
         padding-bottom: 130px;
         padding-top: 73px;
 
+        &+.small-block-with-image.buy-section {
+            margin-top: 200px
+        }
+
         .text-section {
             width: calc((1360px - 2 * 40px) / 12 * 5 + 2vw);
             margin-right: calc((1360px - 2 * 40px) / 12 + 40px + (100vw - 1360px) / 2);
@@ -1417,7 +1433,8 @@ div.collab_statistic {
     div.collab_statistic {
         display: flex;
         margin-bottom: 20px;
-        &:last-of-type{
+
+        &:last-of-type {
             margin-bottom: 0;
         }
 
