@@ -33,13 +33,13 @@ try {
 
     const liTabNavigation = Array.from(document.querySelectorAll('.tab_block li[data-attr]'));
     const tabContent = Array.from(document.querySelectorAll('.tab_content'));
-        console.log(liTabNavigation)
+        // console.log(liTabNavigation)
 
     liTabNavigation.map((el, ind) => {
-        console.log(el)
+        // console.log(el)
 
         el.addEventListener('click', function() {
-            console.log('lkjhgfcvbnm,kljhb')
+            // console.log('lkjhgfcvbnm,kljhb')
 
             if(window.innerWidth <= 768 && !el.closest('.visual-container')){
                 if(+ind === 2){
@@ -176,7 +176,7 @@ try {
 
         el.addEventListener('click', () => {
 
-            console.log('click there designersPartnership')
+            // console.log('click there designersPartnership')
 
             if (!offerPrjPopup.classList.contains('show')) {
                 offerPrjPopup.classList.add('show');

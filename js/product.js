@@ -34,8 +34,6 @@ slideCountAll.innerHTML = countSlide;
 
 $('.product-gallery .gellery_for .slick-arrow').click(() => {
     let currentSlide = $('.product-gallery .gellery_for .owl-wrapp ').slick('slickCurrentSlide');
-
-    console.log(currentSlide);
     slideCountActual.innerHTML = currentSlide + 1;
     slideCountAll.innerHTML = countSlide;
 

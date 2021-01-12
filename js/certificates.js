@@ -4,11 +4,12 @@ certificateBlock.forEach((el) => {
     if (el.children.length > 2) {
         el.classList.add('owl-carousel');
 
-        $('.owl-carousel').slick({
+        $(el).slick({
             arrows: false,
             variableWidth: true,
             slidesToShow: 2
         })
+
     } else {
         Array.from(el.closest('.certificate_block').querySelectorAll('.rotator-arr')).forEach((el) => el.style.display = 'none');
     }

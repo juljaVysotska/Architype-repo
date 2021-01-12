@@ -26,7 +26,7 @@ function setDataAttr(id, numb = '01') {
 
 function activeStoneCard(groupNumb) {
     const srcArrt = 'img_' + groupNumb; //формирую айди
-    console.log(groupNumb)
+    // console.log(groupNumb)
     const splitString = document.querySelector(`#${srcArrt}`).getAttribute('src').split('_'); //нахожу нужный элемент по айди
     //вытаскиваю адресс картинки
     const imgNumb = splitString[splitString.length - 1].split('.')[0]; //вытаскиваю номер картинки
@@ -48,7 +48,7 @@ function svgHeight(){
        
 
         parentVisualBlock.style.height = height + 'px';
-        console.log(height);
+        // console.log(height);
 
     }else{
         parentVisualBlock.style.height = '';
@@ -201,7 +201,7 @@ closeFilter.forEach((el) => {
 el.addEventListener('click', () => {
     document.querySelector('.filter_block').classList.remove('show');
     
-   console.log('click')
+   // console.log('click')
     setTimeout(() => {
         if (window.innerWidth <= 768) {
             visualWrapp.style.zIndex = '';
