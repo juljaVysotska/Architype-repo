@@ -279,52 +279,7 @@ try {
 }
 
 
-///////////////////////
-try {
-    const readMore = Array.from(document.querySelectorAll('.read-more '));
-    const readMoreDescription = Array.from(document.querySelectorAll('.description p.read-more'));
 
-    readMore.forEach((el) => {
-
-        el.addEventListener('click', () => {
-
-            if (!el.closest('.text-section').querySelector('.content-wrapp').classList.contains('open')) {
-
-                el.closest('.text-section').querySelector('.content-wrapp').classList.add('open');
-                el.closest('.text-section').querySelector('.content-wrapp').style.maxHeight = '500vh';
-                el.innerHTML = "Скрыть";
-            } else {
-
-                el.closest('.text-section').querySelector('.content-wrapp').classList.remove('open');
-                el.closest('.text-section').querySelector('.content-wrapp').style.maxHeight = '';
-                el.innerHTML = "Читать еще";
-            }
-        });
-    });
-} catch (e) {
-    console.log(e);
-}
-
-try {
-    const readMoreDescription = Array.from(document.querySelectorAll('.description p.read-more'));
-
-    readMoreDescription.forEach((el) => {
-        el.addEventListener('click', () => {
-            if (!el.closest('.description').querySelector('.content_wrapp .text_wrapp').classList.contains('open')) {
-                el.closest('.description').querySelector('.content_wrapp .text_wrapp').classList.add('open');
-                el.closest('.description').querySelector('.content_wrapp .text_wrapp').style.maxHeight = '500vh';
-                el.innerHTML = "Скрыть";
-            } else {
-
-                el.closest('.description').querySelector('.content_wrapp .text_wrapp').classList.remove('open');
-                el.innerHTML = "Читать еще";
-                el.closest('.description').querySelector('.content_wrapp .text_wrapp').style.maxHeight = '';
-            }
-        })
-    });
-} catch (e) {
-    console.log(e);
-}
 
 
 ////////////////////////////
