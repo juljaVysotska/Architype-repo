@@ -1,14 +1,4 @@
-$('.product-gallery .gellery_for .owl-wrapp ').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // arrows: false,
-    fade: true,
-    infinite: false,
-    asNavFor: '.product-gallery .gellery_nav .owl-wrapp',
-    prevArrow: '<button type="button" class="slick-prev control -prev"><img src="img/icon/rotator-arr-left.svg" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next control -next"><img src="img/icon/rotator-arr-right.svg" alt=""></button>',
 
-});
 
 $('.product-gallery .gellery_nav .owl-wrapp').slick({
     slidesToShow: 3,

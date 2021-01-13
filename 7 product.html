@@ -1619,6 +1619,19 @@
 	<script src="js/slick/slick.js"></script>
 
 	<script src="js/product.js"></script>
+	<script>
+		$('.product-gallery .gellery_for .owl-wrapp ').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    // arrows: false,
+	    fade: true,
+	    infinite: false,
+	    asNavFor: '.product-gallery .gellery_nav .owl-wrapp',
+	    prevArrow: '<button type="button" class="slick-prev control -prev"><img src="img/icon/rotator-arr-left.svg" alt=""></button>',
+	    nextArrow: '<button type="button" class="slick-next control -next"><img src="img/icon/rotator-arr-right.svg" alt=""></button>',
+
+	});
+	</script>
 
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
