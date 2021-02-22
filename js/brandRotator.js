@@ -34,6 +34,7 @@ if (window.innerWidth >= 768) {
         arrows: false,
         dots: false,
         infinite: true,
+        autoWidth: true,
         responsive: [{
             breakpoint: 768,
             settings: {

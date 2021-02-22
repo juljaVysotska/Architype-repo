@@ -7,8 +7,13 @@
     box-sizing: border-box;
 }
 
-*:focus,*:active{
+*:focus,
+*:active {
     outline: none !important;
+}
+
+a[tel] {
+    white-space: nowrap;
 }
 
 body {
@@ -29,8 +34,9 @@ a {
         text-decoration: none;
         transition: 0.3s all ease-in-out;
     }
+
     &:active,
-    &:focus{
+    &:focus {
         outline: none;
     }
 }
@@ -1804,6 +1810,7 @@ footer {
             text-transform: uppercase;
             color: #222729;
             margin-bottom: 1.11111111111vw;
+            white-space: nowrap;
         }
 
         .buy {
@@ -3572,7 +3579,8 @@ div.info_card {
     position: relative;
     // width: 22.7941176471vw;
     width: calc((100% - 2 * 4.70588235294vw) / 3);
-    margin-right: 4.70588235294vw;
+    // margin-right: 4.70588235294vw;
+    margin-right: 4.6058823vw;
     margin-bottom: 6.02941176471vw;
 
     &:nth-child(3n) {
@@ -9360,9 +9368,10 @@ div.info_card {
 
         opacity: 0;
 
-        &.slick-current.slick-active{
+        &.slick-current.slick-active {
             opacity: 1;
         }
+
         img {
             width: 100%;
             height: 100%;

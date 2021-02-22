@@ -121,7 +121,7 @@
 	}
 
 	.title{
-		.font-300-raleway;
+		.font-400-raleway;
 		font-size: 3.08823529412vw;
 		line-height: 3.30882352941vw;
 		font-feature-settings: 'pnum' on, 'lnum' on;
@@ -170,14 +170,25 @@
 	}
 
 
-	.decorative-link:after {
+	.decorative-link{
+		&:after {
+	        // background: transparent url(../img/link-shape/red-top-right.svg) center center no-repeat;
+			background: transparent url(../img/link-shape/left-color-top-right.svg) center center no-repeat;
+	        background-size: contain;
+	        right: unset;
+	        left: -3.16176470588vw;
+	    }
 
-          
-        background: transparent url(../img/link-shape/red-top-right.svg) center center no-repeat;
-        background-size: contain;
-        right: unset;
-        left: -3.16176470588vw;
-    }
+	    &:hover{
+	    	&:after{
+	    		left: -2vw;
+	    	}
+	    }
+	}
+
+	
+
+    
 }
 
 

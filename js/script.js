@@ -114,11 +114,17 @@ partnershipTriggers.forEach((el) => {
 
 });
 
-partnershipPopup.addEventListener('click', (e) => {
-    if (!e.target.closest('.partnership_pop_up')) {
-        partnershipPopup.classList.remove('show')
-    }
-});
+try{
+
+    partnershipPopup.addEventListener('click', (e) => {
+        if (!e.target.closest('.partnership_pop_up')) {
+            partnershipPopup.classList.remove('show')
+        }
+    });
+
+}catch(e){
+    console.log(3)
+}
 
 /////////////////////////////////////////////
 
