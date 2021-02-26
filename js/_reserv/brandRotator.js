@@ -27,10 +27,6 @@ for (let i = 0; i < count; i++) {
 }
 
 
-if(brandsItems.length <=4 ){
-    document.querySelectorAll('.brands_block  .controls .-next').forEach(el => el.style.opacity = 0);
-    document.querySelectorAll('.brands_block  .controls .-prev').forEach(el => el.style.opacity = 0);
-}
 if (window.innerWidth >= 768) {
     
     brandsBlockRotator.slick({
@@ -38,7 +34,6 @@ if (window.innerWidth >= 768) {
         arrows: false,
         dots: false,
         infinite: true,
-        autoWidth: true,
         responsive: [{
             breakpoint: 768,
             settings: {

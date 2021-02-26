@@ -2155,8 +2155,8 @@ footer {
 
     .img-cover {
         width: calc((100vw - 2.77777777778vw * 2) / 12 * 5 + 2.77777777778vw);
-        height: 10.2777777778vw;
-
+        min-height: 10.2777777778vw;
+        height: 175/13.6*1vw;
         img {
             width: 100%;
             height: 100%;
@@ -2207,6 +2207,19 @@ footer {
                 background: rgba(255, 255, 255, 0.1)
             }
         }
+    }
+
+    @media screen and (min-width: 1360px){
+        .text-section{
+            h3{
+                font-size: 28px;
+            }
+
+            div{
+                padding-left: 15px;
+            }
+        }
+        
     }
 }
 
@@ -2367,12 +2380,13 @@ footer {
         margin-bottom: 50px;
         max-width: 1360px;
         margin-left: auto;
-        height: 150px;
+        min-height: 150px;
         margin-right: auto;
 
         .img-cover {
             width: calc((100% - 40px * 2) / 12 * 5 + 40px);
-            height: 150px;
+                min-height: 150px;
+                height: 225px;
         }
 
         .text-section {
@@ -3165,6 +3179,18 @@ div.info_card {
     position: relative;
     margin-bottom: 7.35294117647vw;
 
+    & + .small-block-with-image.buy-section{
+        margin-top: 180/13.6*1vw;
+
+        @media screen and (min-width: 1360px){
+            margin-top: 180px;
+
+        }
+        @media screen and (max-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
     .request-wish_popup_btn,
     .request-offer_popup_btn {
         display: none;
@@ -3362,7 +3388,17 @@ div.info_card {
         color: #222729;
         margin-bottom: 2.94117647059vw;
     }
+
+    & + .small-block-with-image.buy-section{
+        margin-top: 100px;
+
+        @media screen and (max-width768px){
+            margin-top: 50/3.2*1vw;
+        }
+    }
 }
+
+
 
 
 
@@ -7125,6 +7161,18 @@ div.info_card {
     padding-top: 6.61764705882vw;
     margin-bottom: 7.35294117647vw;
 
+    & + .small-block-with-image.buy-section{
+        margin-top: 170/13.6*1vw;
+
+        @media screen and (min-width: 1360px){
+            margin-top: 180px;
+        }
+        @media screen and (max-width: 768px){
+            margin-top: 0;
+        }
+
+    }
+
     .back {
         position: absolute;
         top: 0;
@@ -8299,6 +8347,10 @@ div.info_card {
         opacity: 1;
     }
 
+    .slick-list{
+        width: 100%;
+    }
+
     .brand_item {
         // width: calc(100% / 4);
         position: relative;
@@ -8306,6 +8358,8 @@ div.info_card {
         align-items: center;
         justify-content: center;
         height: 20.9411764706vw;
+        // min-width: 267px;
+        width: 267/13.6*1vw;
 
         &:focus,
         &:active {
@@ -8313,6 +8367,7 @@ div.info_card {
         }
 
         @media screen and (min-width: 768px) {
+
             &:before {
                 content: '';
                 display: block;
@@ -8431,6 +8486,11 @@ div.info_card {
             width: 100%;
             justify-content: flex-start;
             height: auto;
+
+            margin-bottom: 20/3.2*1vw;
+            &:last-child{
+                margin-bottom: 0;
+            }
 
             p {
                 font-size: 3.75vw;
